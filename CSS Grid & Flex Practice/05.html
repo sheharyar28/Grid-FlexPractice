@@ -1,0 +1,102 @@
+<html>
+<head>
+<style>
+
+.i{grid-area: header;}
+.i1{grid-area:menu}
+.i2{grid-area:main}
+.i3{grid-area:footer}
+
+.grid-class{
+display: grid;
+grid-template-areas:
+'header header header header header header'
+'menu main main main main main'
+'footer footer footer footer footer footer';
+grid-gap: 10px;
+background-color: green;
+}
+.grid-class>div{
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.i4{ display: flex;}
+
+.i4>div{
+    padding: 20px;
+    margin: 30px;
+}
+</style>
+</head>
+
+<body style="background-color:lightgreen; color: white;">
+
+
+<div class="grid-class">
+
+    <div class="i">
+    <h1 style="text-align:center;"> Variables</h1>
+    </div>
+
+    <div class="i1">
+    <p><a href="index.html">JS Documentation</a></p><hr>
+    <p><a href="01.html">Introduction</a></p><hr>
+    <p><a href="02.html">What you should</a></p><hr>
+    <p><a href="03.html">Javascript and Java</a></p><hr>
+    <p><a href="04.html">Hello World</a></p><hr>
+    <p style="background-color:black; font-weight: bold;"><a href="05.html">Variables</a></p><hr>
+    <p><a href="06.html">Declaring Variables</a></p><hr>
+    <p><a href="07.html">Variables Scope</a></p>
+    </div>
+
+
+    <div class="i2">
+        <h2>Details</h2>
+        Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Etiam ultricies nisi vel augue. 
+        Curabitur ullamcorper ultricies nisi
+        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. 
+        Phasellus viverra nulla ut metus varius laoreet
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem
+        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+        In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+        Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
+        Cras dapibus. Vivamus elementum semper nisi Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Minima fuga quos ea eos soluta ipsa sit ipsum nesciunt praesentium! 
+        Suscipit ea doloremque earum voluptatum aliquid voluptatibus? 
+        Animi, vel quo. Atque.
+    </div>
+
+    <div class="i3">
+        <div class="i4">
+        <div>
+            <h3>Contact Details</h3>
+            <p>Cras dapibus. Vivamus elementum semper nisi Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Minima fuga quos ea eos soluta ipsa sit ipsum nesciunt praesentium! Suscipit ea doloremque earum voluptatum aliquid voluptatibus? 
+            Animi, vel quo. Atque.</p>
+        </div>
+
+        <div>
+            <h3>Comments</h3>
+            <form>
+                <label>Name</label><br>
+                <input type="text" name="name"><br>
+                <label>Email</label><br>
+                <input type="text" name="email"><br>
+                <label>Comment</label><br>
+                <textarea></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        </div>
+    </div>
+
+</html>
